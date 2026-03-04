@@ -44,7 +44,7 @@ export const createNote = async ({ title, content, tag }: NoteFormValues):Promis
 }
 
 export const deleteNote = async (id: string):Promise<Note> => {
-    const response = await axios.delete(`https://notehub-public.goit.study/api/notes/${id}`, {
+    const response = await axios.delete<Note>(`https://notehub-public.goit.study/api/notes/${id}`, {
         headers: {
             Authorization: `Bearer ${myKey}`,
         }
