@@ -47,7 +47,6 @@ export default function NoteForm({ onClose }: NoteFormProps) {
             actions.resetForm();
         },
         });
-        actions.resetForm();
     }
 
     return (
@@ -81,7 +80,6 @@ export default function NoteForm({ onClose }: NoteFormProps) {
                     <option value="Shopping">Shopping</option>
                     </Field>
                     <ErrorMessage name="tag" component="span" className={css.error} />
-                    <span className={css.error} />
                 </div>
 
                 <div className={css.actions}>
